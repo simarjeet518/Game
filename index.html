@@ -3,9 +3,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css" >
 </head>
 <body>
- <script src="script.js"></script>   
+    <script src="script.js"></script>   
+    <div class="container">
+        <div class="heading">
+            <h1>Blackjack</h1>
+            <h2><span id="Result">Let's Play</span></h2>
+        </div>
+        
+        <div class="flexbox-row-1">
+            <div class="your-box">
+                <h2>You:<span id="your-play">0</span></h2>
+            </div>
+            <div class="dealer-box">
+                <h2>Dealer:<span id="dealer-play">0</span></h2>
+            </div>
+        </div>
+        <div class="flexbox-row-2">
+            <div class="buttons">
+                <button class="btn-lg btn-primary mr-2" id="hitbutton">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="standbutton">Stand</button>
+                <button class="btn-lg btn-danger mr-2" id="dealbutton">Deal</button>
+            </div>
+        </div>
+        <div class="flexbox-row-3">
+            <table>
+                <tr>
+                <th>Win</th>
+                <th>Loses</th>
+                <th>Draw</th>
+                </tr>
+                <tr>
+                    <td><span id="win">0</span></td>
+                    <td><span id="loses">0</span></td>
+                    <td><span id="draw">0</span></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    
+
 </body>
 </html>
