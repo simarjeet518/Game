@@ -39,20 +39,23 @@ window.onload=function(){
        BlackjackGame.isStand=true;
        }
 }
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+ function sleep(ms) {
+    
+    return new Promise(resolve=> setTimeout(resolve,ms));
+
   }
 
- async function standfunction(){
+async function standfunction(){
       BlackjackGame.ishit=false;
       while(BlackjackGame.isStand&& DEALER.score<17){
           showCard(DEALER,CARDS);
           hitSound.play();
           showScore(DEALER);
+          await sleep(1000);
       }
      showResult();
     BlackjackGame.turnOver=true;
-    await sleep(1000);
+   
           }
 
   function dealfunction(){
