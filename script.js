@@ -39,9 +39,9 @@ window.onload=function(){
        BlackjackGame.isStand=true;
        }
 }
-function sleep(ms){
-    return new Promise(Response=>setTimeout(Response,ms));
-}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
  async function standfunction(){
       BlackjackGame.ishit=false;
